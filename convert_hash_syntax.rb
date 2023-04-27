@@ -7,3 +7,5 @@ old_syntax = <<TEXT
 TEXT
 
 puts old_syntax
+
+convert_hash_syntax(old_syntax)
