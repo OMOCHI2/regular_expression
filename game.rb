@@ -1,6 +1,7 @@
 html = <<-HTML
 <select name="game_console">
 <option value="none"></option>
+<option value="123">123</option>
 <option value="wii_u" selected>Wii U</option>
 <option value="ps4">プレステ4</option>
 <option value="gb">ゲームボーイ</option>
