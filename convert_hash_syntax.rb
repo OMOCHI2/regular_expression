@@ -6,6 +6,18 @@ old_syntax = <<TEXT
 }
 TEXT
 
-puts old_syntax
+text = <<TEXT
+I love Ruby.
+Python is a great language.
+Java and Javascript are different.
+TEXT
 
-convert_hash_syntax(old_syntax)
+puts text.scan(/[A-Z][A-Za-z]+/)
+
+text2 = <<TEXT
+私の郵便番号は1234567です。
+僕の住所は6770056 兵庫県だよ。
+TEXT
+
+puts text2.gsub(/(\d{3})(\d{4})/) { "#{$1}-#{$2}" }
+
